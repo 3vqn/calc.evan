@@ -1,6 +1,6 @@
-var operator = prompt("Operator (+, -, *, /)");
-var num1 = parseFloat(prompt("Number1"));
-var num2 = parseFloat(prompt("Number2"));
+let operator = prompt("Operator (+, -, *, /)");
+let num1 = parseFloat(prompt("Number1"));
+let num2 = parseFloat(prompt("Number2"));
 
 if (operator === "+") {
     result = num1 + num2;
