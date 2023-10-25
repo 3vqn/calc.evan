@@ -1,23 +1,19 @@
-let operator = prompt("Operator (+, -, *, /)");
-let num1 = parseFloat(prompt("Number1"));
-let num2 = parseFloat(prompt("Number2"));
+let operator = prompt('Operator (+, -, *, /)');
+let num1 = parseFloat(prompt('Number 1'));
+let num2 = parseFloat(prompt('Number 2'));
 
-if (operator === "+") {
-    result = num1 + num2;
-} else if (operator === "-") {
-    result = num1 - num2; 
-} else if (operator === "*") {
-    result = num1 * num2;
-} else if (operator === "/") { 
+if (operator === '+') {
+    document.write(`<h1>Result: ${num1 + num2}</h1>`);
+} else if (operator === '-') {
+    document.write(`<h1>Result: ${num1 - num2}</h1>`);
+} else if (operator === '*') {
+    document.write(`<h1>Result: ${num1 * num2}</h1>`);
+} else if (operator === '/') {
     if (num2 === 0) {
         alert("Tidak dapat membagi dengan nol.");
     } else {
-        result = num1 / num2;
+        document.write(`<h1>Result: ${num1 / num2}</h1>`);
     }
 } else {
-    alert("Operator tidak valid");
-}
-
-if (result !== undefined) {
-    document.write("Hasil: " + result); 
+    document.write(`<h1>Error!!!</h1>`);
 }
